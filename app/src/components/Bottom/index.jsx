@@ -2,8 +2,8 @@ import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faPaw } from '@fortawesome/fontawesome-free-solid'
 
-
 const index = () => {
+
     const bottomStyle = {
         width: "100%",
         textAlign: "center",
@@ -16,7 +16,9 @@ const index = () => {
     return (
         <div style={bottomStyle}>
             By <FontAwesomeIcon icon={faPaw} /> &nbsp;
-            <a href="https://github.com/sanix-darker" style={{color: "white"}}>Sanix-darker</a>
+            <span >
+                Sanix-darker
+            </span>
         </div>
     )
 }

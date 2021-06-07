@@ -1,12 +1,21 @@
 #!/usr/bin/bash
 
+# _react_app_dev () {
+#     cd app
+#     rm -rf build
+#     yarn build
+
+#     cd build
+#     http-server -p 3000
+# }
+
 _react_app () {
     cd app
     yarn start
 }
 
 _electron () {
-    sleep 20
+    sleep 10
 
     CHROME_SANDBOX_PATH=./node_modules/electron/dist/chrome-sandbox
     sudo chown -R root $CHROME_SANDBOX_PATH

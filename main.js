@@ -5,8 +5,12 @@ const path = require('path')
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 850,
-    height: 600,
+    width: 900,
+    height: 550,
+    minWidth: 800,
+    minHeight: 500,
+    title: "CINEMON",
+    frame: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -20,7 +24,7 @@ const createWindow = () => {
   // mainWindow.loadFile('index.html')
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished

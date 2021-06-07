@@ -1,0 +1,22 @@
+#head{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: #282c34;
+    font-size: 13px;
+    border-radius: 0px;
+}
+
+.menuButton{
+    color: white;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menuButton :hover{
+    background-color: rgba(255,255,255,0.5);
+    transition: 0.7s;
+}
