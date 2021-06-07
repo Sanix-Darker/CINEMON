@@ -1,4 +1,4 @@
-import Home from './components/Home'
+import HomePage from './containers/HomePage/'
 import Bottom from './components/Bottom'
 import {Route, BrowserRouter as Router} from 'react-router-dom'
 
@@ -7,9 +7,9 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Route exact path="/" component={Home} />
-        <Route path="/new" component={Home} />
-        <Route path="/demo" component={Home} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/new" component={HomePage} />
+        <Route path="/demo" component={HomePage} />
       </Router>
       <Bottom />
     </div>
