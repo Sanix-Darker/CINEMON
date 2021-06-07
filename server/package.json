@@ -1,0 +1,17 @@
+{
+  "name": "cinemon-server",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "Sanix-darker",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^13.0.1"
+  },
+  "dependencies": {
+    "ffmpeg-cli": "^2.7.3",
+    "node-media-server": "^2.2.7"
+  }
+}
