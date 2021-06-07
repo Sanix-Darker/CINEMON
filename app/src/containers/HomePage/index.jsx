@@ -9,6 +9,7 @@ import "./index.css"
 const index = () => {
     return (
         <div>
+            <br/><br/>
             <img alt="logo" style={{width: "170px"}} src={window.location.origin +"/logo.png"} />
             <h1 style={{fontSize: "70px"}}>CINEMON</h1>
             <p style={{fontSize: "15px"}}>

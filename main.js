@@ -5,8 +5,8 @@ const path = require('path')
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 550,
+    width: 800,
+    height: 500,
     minWidth: 800,
     minHeight: 500,
     title: "CINEMON",
