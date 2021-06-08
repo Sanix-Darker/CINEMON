@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import { Link } from "react-router-dom"
+// import { Link, Router } from "react-router-dom"
 import "./index.css"
 
 const index = () => {
@@ -18,14 +18,22 @@ const index = () => {
     }
 
     return (
-        <nav id="head" className="mb-4 navbar navbar-expand-md navbar-dark lighten-1" style={{"-webkit-app-region": "drag"}}>
+        <nav id="head" className="mb-4 navbar navbar-expand-md navbar-dark lighten-1 drag">
 
             <img alt="logo" style={{width: "3%", marginRight: "13px"}} src={window.location.origin + "/mini-logo.png"} />
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5" aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
+            {/*
+            <button className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent-5"
+                    aria-controls="navbarSupportedContent-5"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */ }
+
             <div className="collapse navbar-collapse" id="navbarSupportedContent-5" >
-                <ul className="navbar-nav mr-auto" style={{"-webkit-app-region": "no-drag"}}>
+                { /*<ul className="navbar-nav mr-auto" style={{"-webkit-app-region": "no-drag"}}>
                     <li className="nav-item active" >
                         <Link to="/">
                             <a className="nav-link" href="#">Home</a>
@@ -41,11 +49,12 @@ const index = () => {
                             <a className="nav-link" href="#">About</a>
                         </Link>
                     </li>
-                </ul>
+                </ul> */ }
             </div>
-            <div className="menuButton minimizeButton" style={{"-webkit-app-region": "no-drag"}} onClick={minimizeWindow}>🗕︁</div>
+
+            <div className="menuButton minimizeButton" onClick={minimizeWindow}>🗕︁</div>
             &nbsp; &nbsp;
-            <div className="menuButton closeButton" style={{"-webkit-app-region": "no-drag"}} onClick={closeWindow}>×︁</div>
+            <div className="menuButton closeButton" onClick={closeWindow}>×︁</div>
         </nav>
     )
 }

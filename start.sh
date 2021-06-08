@@ -15,7 +15,7 @@ _react_app () {
 }
 
 _electron () {
-    sleep 10
+    sleep 5
 
     CHROME_SANDBOX_PATH=./node_modules/electron/dist/chrome-sandbox
     sudo chown -R root $CHROME_SANDBOX_PATH
