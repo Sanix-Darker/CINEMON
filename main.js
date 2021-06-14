@@ -5,10 +5,10 @@ const path = require('path')
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
-    height: 600,
-    minWidth: 900,
-    minHeight: 600,
+    width: 1000,
+    height: 650,
+    minWidth: 1000,
+    minHeight: 650,
     title: "CINEMON",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
